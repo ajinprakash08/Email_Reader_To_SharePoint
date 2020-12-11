@@ -12,7 +12,8 @@ namespace Email_Reader_To_SharePoint
             try
             {
                 OutlookStorage.Message outlookMsg = new OutlookStorage.Message(filepath);
-                SaveMessage(outlookMsg);
+                new SPOperations().InsertMailItem(outlookMsg);
+                //SaveMessage(outlookMsg);
             }
             catch (Exception ex)
             {

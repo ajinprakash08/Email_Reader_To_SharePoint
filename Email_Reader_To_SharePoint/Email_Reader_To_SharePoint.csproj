@@ -55,14 +55,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MimeReader.cs" />
-    <Compile Include="OutlookStorage.cs" />
+    <Compile Include="Eml_Utility\MimeReader.cs" />
+    <Compile Include="Msg_Utility\OutlookStorage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuotedPrintable.cs" />
-    <Compile Include="ReadEmlFile.cs" />
-    <Compile Include="ReadMsgFile.cs" />
-    <Compile Include="RxMailMessage.cs" />
+    <Compile Include="Eml_Utility\QuotedPrintable.cs" />
+    <Compile Include="MailReaders\ReadEmlFile.cs" />
+    <Compile Include="MailReaders\ReadMsgFile.cs" />
+    <Compile Include="Eml_Utility\RxMailMessage.cs" />
+    <Compile Include="SP_Utility\SPOperations.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
